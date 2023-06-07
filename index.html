@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    
+</head>
+<body style="background-color: aquamarine;">
+    <h1 style="margin-top: 2%; text-align: center; margin-bottom: 2%; ">Shopping Cart</h1>
+    <div class="container">
+        <form id="addForm" class="form-inline mb-2">
+            <div class="form-row">
+                <div class="col-md-3 mb-3">
+                    <label>Name:</label>
+                    <input type="text" class="form-control " id="Pname">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label>Description :</label>
+                    <input type="text" class="form-control " id="PDec">
+
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label>Price:</label>
+                    <input type="text" class="form-control" id="PPrice">
+
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label>Quantity:</label>
+                    <input type="number"  min ='1'class="form-control" id="PQuant">
+
+                </div>
+            </div>
+            <input type="submit" class="btn btn-dark me-4" value="Add item">
+           
+        </form>
+         <div class="item">
+
+            
+            <ul id="items" class="list-group">
+                
+                    
+                
+        
+            </ul>
+           
+         </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script src="index.js"></script>
+    
+</body>
+</html>
